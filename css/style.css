@@ -569,6 +569,10 @@ a:focus {
   align-items: center;
 }
 
+.contact_section .form-heading-text{
+  color: #96bb7c;
+}
+
 .contact_section .contact_form-container {
   margin-top: 35px;
 }
