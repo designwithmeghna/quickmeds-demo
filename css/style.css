@@ -14,7 +14,7 @@ h1 {
   font-weight: 700;
 
   /* A green tone to match your QuickMeds branding */
-  color: #2a7a3e;
+  color: #95BB7C;
 
   margin-bottom: 0.8rem;
 }
@@ -28,7 +28,7 @@ h2 {
   /* Semi-bold to create a visual hierarchy */
   font-weight: 600;
 
-  color: #2a7a3e;
+  color: #95BB7C;
   margin-bottom: 0.6rem;
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 h4 {
-  color: #68ab7f;
+  color: #95BB7C;
 }
 
 /* h2 {
@@ -54,6 +54,31 @@ h4 {
 p {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
+}
+
+.contact_section .contact_form-container input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(188, 188, 188)!important;
+}
+
+.contact_section .contact_form-container input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgb(188, 188, 188)!important;
+   opacity:  1;
+}
+
+.contact_section .contact_form-container input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgb(188, 188, 188)!important;
+   opacity:  1;
+}
+
+.contact_section .contact_form-container input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgb(188, 188, 188)!important;
+}
+.contact_section .contact_form-container input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgb(188, 188, 188)!important;
+}
+
+.contact_section .contact_form-container input::placeholder { /* Most modern browsers support this now. */
+   color:    rgb(188, 188, 188)9!important;
 }
 
 .testimonial-text {
@@ -115,10 +140,14 @@ body {
   padding-right: 0;
 }
 
+.custom_nav-container img{
+  width: 100%;
+}
+
 .custom_menu-btn {
   position: fixed;
   right: 25px;
-  top: 15px;
+  top: 25px;
   width: 50px;
   height: 50px;
 }
@@ -453,7 +482,7 @@ a:focus {
   margin-top: 25px;
 }
 
-.contact_section .contact_form-container button {
+.quickmed-primary-button {
   display: inline-block;
   padding: 10px 60px;
   background-color: #96bb7c;
@@ -464,7 +493,7 @@ a:focus {
   font-weight: bold;
 }
 
-.contact_section .contact_form-container button:hover {
+.quickmed-primary-button:hover {
   background-color: transparent;
   color: #96bb7c;
 }
