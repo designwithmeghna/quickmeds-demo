@@ -446,7 +446,7 @@ p {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(24, 77, 71, 0.2),
+    rgba(107, 128, 125, 0.2),
     rgba(24, 77, 71, 0.75)
   );
 }
