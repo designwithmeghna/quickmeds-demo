@@ -121,9 +121,17 @@ const handleFormSubmission = () => {
 };
 
 /** Feature code here **/
-(() => {
-  // Feature 1
+
+// Feature 1
+// Open/Close overlay Navigation Menu
+function openNav() {
+  document.getElementById("myNav").classList.toggle("menu_width");
+  document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+}
+
+  // Feature 2
   // Add event listner to the form
+(() => {
   const form = document.getElementById("contact-us-form");
   if (form){
     form.addEventListener("submit", (event) => {
@@ -132,24 +140,12 @@ const handleFormSubmission = () => {
     });}
 })();
 
-(() => {
-  // Feature 2
-  // Set current year in footer
-  let currentDate = new Date();
-  let currentYear = currentDate.getFullYear();
-  document.getElementById("displayYear").innerHTML = currentYear;
-})();
-
 // Feature 3
-// Open/Close overlay menu
-function openNav() {
-  document.getElementById("myNav").classList.toggle("menu_width");
-  document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
-}
+// Carausel Functionality from bootstrap/jquery library
 
-(() => {
-  // Feature 4
+// Feature 4
   // adding google map's iframe
+(() => {
   let mapIframe = `
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.58741448872!2d-79.9046208876491!3d43.531795760153116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6f4810934363%3A0x5b97f97d97a9fef4!2sConestoga%20College-%20Milton%20campus!5e0!3m2!1sen!2sca!4v1732400252959!5m2!1sen!2sca" 
@@ -165,11 +161,16 @@ function openNav() {
 })();
 
 // Feature 5
-// Carausel Functionality from bootstrap/jquery library
-
+  // Set current year in footer
 (() => {
-  // Bonus Feature
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+  document.getElementById("displayYear").innerHTML = currentYear;
+})();
+
+// ********* Bonus Feature ***********
   // Set current Date and Time in footer
+(() => {
   setInterval(() => {
     let currentDate = new Date();
     document.getElementById("currentDate").innerHTML = currentDate;
