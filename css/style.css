@@ -32,7 +32,7 @@ p {
   font-size: 18px;
 }
 
-/******************************* Placeholder Styling ******************************/
+/******************************* Placeholder text Styling ******************************/
 .contact_section .contact_form-container input::placeholder {
   color: #fafafa;
   font-family: "Nunito", sans-serif;
@@ -207,7 +207,6 @@ p {
   transition: 0.5s;
   z-index: 9;
 }
-
 .overlay .closebtn {
   position: absolute;
   top: 0;
@@ -226,7 +225,6 @@ p {
   font-weight: 600;
   opacity: 0;
 }
-
 .overlay a:hover {
   color: #96bb7c;
 }
@@ -249,12 +247,9 @@ p {
   text-align: center;
 }
 
-.footer_section h4 {
-  font-size: 28px;
-}
-
 .footer_section h4,
 .footer_section .footer-logo {
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
   font-family: "Playfair Display", serif;
