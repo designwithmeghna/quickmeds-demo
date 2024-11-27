@@ -1,4 +1,4 @@
-/******  Helper functions for feature 1 ******/
+/******  Helper functions for feature 2 ******/
 
 const formDataMap = {
   name: {
@@ -125,26 +125,30 @@ const handleFormSubmission = () => {
 // Feature 1
 // Open/Close overlay Navigation Menu
 function openNav() {
+  // Toggle the width of the navigation menu
   document.getElementById("myNav").classList.toggle("menu_width");
+
+  // Toggle the style of the menu button
   document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
 }
 
-  // Feature 2
-  // Add event listner to the form
+// Feature 2
+// Add event listner to the Contact form
 (() => {
   const form = document.getElementById("contact-us-form");
-  if (form){
+  if (form) {
     form.addEventListener("submit", (event) => {
       event.preventDefault(); // Prevent default form submission behavior
       handleFormSubmission();
-    });}
+    });
+  }
 })();
 
 // Feature 3
 // Carausel Functionality from bootstrap/jquery library
 
 // Feature 4
-  // adding google map's iframe
+// adding google map's iframe
 (() => {
   let mapIframe = `
             <iframe 
@@ -161,7 +165,7 @@ function openNav() {
 })();
 
 // Feature 5
-  // Set current year in footer
+// Set current year in footer
 (() => {
   let currentDate = new Date();
   let currentYear = currentDate.getFullYear();
@@ -169,7 +173,7 @@ function openNav() {
 })();
 
 // ********* Bonus Feature ***********
-  // Set current Date and Time in footer
+// Set current Date and Time in footer
 (() => {
   setInterval(() => {
     let currentDate = new Date();
