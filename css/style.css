@@ -225,6 +225,7 @@ p {
   font-weight: 600;
   opacity: 0;
 }
+
 .overlay a:hover {
   color: #96bb7c;
 }
@@ -247,9 +248,12 @@ p {
   text-align: center;
 }
 
+.footer_section h4 {
+  font-size: 28px;
+}
+
 .footer_section h4,
 .footer_section .footer-logo {
-  font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
   font-family: "Playfair Display", serif;
