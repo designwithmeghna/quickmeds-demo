@@ -47,9 +47,13 @@ const validateEmailField = () => {
 
 // validation handler for text fields
 const validateTextField = (fieldName, minLength) => {
+  // Get the current value of the text field by its ID
   const value = document.getElementById(fieldName).value;
+
+  // Retrieve the corresponding data object from formDataMap (user enetered)
   const fieldData = formDataMap[fieldName];
 
+  // Check if the input is empty or only contains whitespace
   if (!value || value.trim() === "") {
     fieldData.isEmpty = true;
     fieldData.isValid = false;
@@ -67,16 +71,17 @@ const validateTextField = (fieldName, minLength) => {
 
 // handling form submission
 const handleFormSubmission = () => {
+  
   // Validate fields
-  validateTextField("name", 3);
-  validateEmailField();
-  validateTextField("message", 5);
-
+  validateTextField("name", 3); // Name: At least 3 characters
+  validateEmailField(); // Email: Valid format
+  validateTextField("message", 5); // Message: At least 5 characters
+  
   // Retrieve form data from formDataMap
   const name = formDataMap.name;
   const email = formDataMap.email;
   const message = formDataMap.message;
-
+  
   // Check for validation errors
   if (name.isEmpty) {
     alert("Please enter your name.");
@@ -161,7 +166,9 @@ function openNav() {
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         `;
-  document.getElementById("googleMap").innerHTML = mapIframe;
+  setTimeout(() => {
+    document.getElementById("googleMap").innerHTML = mapIframe;
+  }, 16);
 })();
 
 // Feature 5
@@ -181,28 +188,14 @@ function openNav() {
   }, 1000);
 })();
 
-  /* toggle mobile hero image */
-// Set the hero image based on the screen width 
-(() => {
-  // if image for mobile hero
-  /*
-  const myHeroImage = document.getElementById("my-hero-image");
-  if(screen.width < 767){
-    myHeroImage.src = "./images/mobile-hero-section-bckg.png";
-  }
-  */
-})();
 
-  /* toggle mobile hero image */
-// Set the hero image based on the screen width 
+/* toggle mobile hero image */
 (() => {
-  // if no image for mobile hero
-  // /*
+  
   const myHeroImageContainer = document.getElementById(
     "my-hero-image-container"
   );
-  if(screen.width < 767){
+  if (screen.width < 767) {
     myHeroImageContainer.innerHTML = "";
   }
-  // */
 })();

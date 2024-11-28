@@ -24,13 +24,13 @@ h4 {
   color: #95bb7c;
 }
 
-/******************************* Body text *******************************/
+/*************************** Body text *******************************/
 p {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
 }
 
-/******************************** Testimonial Text ********************************/
+/**************************** Testimonial Text ***********************/
 .testimonial-text {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -208,6 +208,7 @@ p {
   transition: 0.5s;
   z-index: 9;
 }
+
 .overlay .closebtn {
   position: absolute;
   color: #e3ffd4;
@@ -242,7 +243,7 @@ p {
   z-index: 99;
 }
 
-/* footer section*/
+/* --------------------------------------- footer section starte here--------------------------------------- */
 .footer_section {
   background-color: #184d47;
   color: #ffffff;
@@ -281,11 +282,13 @@ p {
 .footer_section .no-decoration-list {
   list-style: none;
 }
-
+/* ---------------------------------------  Footer Section Ends here --------------------------------------- */
 /* --------------------------------------- Common Styling ends here ------------------------------------------ */
 
+
 /* --------------------------------------- Home page starts here ------------------------------------------ */
-/* Hero Section */
+
+/* --------- Hero Section --------- */
 .heading_container {
   display: flex;
   flex-direction: column;
