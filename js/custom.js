@@ -180,3 +180,11 @@ function openNav() {
     document.getElementById("currentDate").innerHTML = currentDate;
   }, 1000);
 })();
+
+// Set the hero image based on the screen width 
+(() => {
+  const myHeroImage = document.getElementById("my-hero-image");
+  if(screen.width < 767){
+    myHeroImage.src = "./images/mobile-hero-section-bckg.png";
+  }
+})();
