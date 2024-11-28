@@ -611,13 +611,18 @@ a:focus {
     align-items: center;
     text-align: center;
   }
+
+  /* toggle mobile hero image */
+  .hero_section .detail-box p {
+    color: #174d47;
+  }
 }
 
-/* @media (max-width: 376px) {
+@media (max-width: 376px) {
   .hero_section .detail-box h1 {
     font-size: 2rem;
   }
-} */
+}
 
 @media (min-width: 1200px) {
   .container {

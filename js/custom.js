@@ -181,10 +181,28 @@ function openNav() {
   }, 1000);
 })();
 
+  /* toggle mobile hero image */
 // Set the hero image based on the screen width 
 (() => {
+  // if image for mobile hero
+  /*
   const myHeroImage = document.getElementById("my-hero-image");
   if(screen.width < 767){
     myHeroImage.src = "./images/mobile-hero-section-bckg.png";
   }
+  */
+})();
+
+  /* toggle mobile hero image */
+// Set the hero image based on the screen width 
+(() => {
+  // if no image for mobile hero
+  // /*
+  const myHeroImageContainer = document.getElementById(
+    "my-hero-image-container"
+  );
+  if(screen.width < 767){
+    myHeroImageContainer.innerHTML = "";
+  }
+  // */
 })();
